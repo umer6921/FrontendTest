@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <!-- AJAX -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- OwlCarousel -->
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4\dist\assets\owl.carousel.css">
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css">
+
+
+
+    <script src="./js/OwlCarousel2-2.3.4\dist\owl.carousel.min.js"></script>
+    <script src="./js/callCarousel.js"></script>
+
+    <!-- Counter fa-linkedin -->
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/animatedCounter.js"></script>
+
+    <link rel="icon" type="image/svg" href="./img/logo.svg">
+
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <nav class="navbar navbar-expand-xl bg-transparent p-lg-0 border-bottom border-white">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" style="width: 60px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Service 1</a></li>
+                                <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            
+                                <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">pages</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  text-light">Cash shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light">Content</a>
+                        </li>
+
+                    </ul>
+                    <div class="socialIcon ms-auto ">
+                        <a class="btn btn-link"><i class="fa-brands fa-instagram text-light" aria-hidden="true"></i></a>
+                        <a class="btn btn-link"> <i class="fa-brands fa-linkedin text-light"></i></a>
+                        <a class="btn btn-link"><i class="fa-brands fa-twitter text-light"></i></a>
+                        <a class="btn btn-link"><i class="fa-brands fa-facebook text-light"></i></a>
+
+                    </div>
+
+
+
+                    <form class="d-flex p-xl-4 search-bar" role="search " >
+
+                        <a class="btn btn-link"><i class="fa fa-search text-light"></i></a>
+                    </form>
+                    <!-- <div class="vertical-line"></div> -->
+                    <div class="help text-light px-xl-3 px-sm-2" >
+                        <p class="mb-0" style="margin-top: 0.9rem;">Need Help?</p>
+                        <p>+92 6667778889</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="hero container ">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="true">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-7 col-sm-9">
+                                <div class="w-75" style="background: rgba(67, 75, 77, 0.74); padding: 0px 4px;">
+                                    <p class="text-light text-uppercase">Welcome to Codeshaper</p>
+                                </div>
+                                <h1 class=" fw-bold text-light" style="font-size: 90px;line-height: 100px;">Consulting
+                                    For Every
+                                    Business</h1>
+                                <button class="btn btn-primary fw-bold btn-lg mt-4"
+                                    style="font-size: 12px; letter-spacing: 0.612px; padding: 15px 30px; ">DISCOVER
+                                    MORE</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-7 col-sm-9">
+                                <div class="w-75" style="background: rgba(67, 75, 77, 0.74); padding: 0px 4px;">
+                                    <p class="text-light text-uppercase">Welcome to Codeshaper</p>
+                                </div>
+                                <h1 class=" fw-bold text-light" style="font-size: 90px;line-height: 100px;">Consulting
+                                    For Every
+                                    Business</h1>
+                                <button class="btn btn-primary fw-bold btn-lg mt-4"
+                                    style="font-size: 12px; letter-spacing: 0.612px; padding: 15px 30px; ">DISCOVER
+                                    MORE</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-7 col-sm-9">
+                                <div class="w-75" style="background: rgba(67, 75, 77, 0.74); padding: 0px 4px;">
+                                    <p class="text-light text-uppercase">Welcome to Codeshaper</p>
+                                </div>
+                                <h1 class=" fw-bold text-light" style="font-size: 90px;line-height: 100px;">Consulting
+                                    For Every
+                                    Business</h1>
+                                <button class="btn btn-primary fw-bold btn-lg mt-4"
+                                    style="font-size: 12px; letter-spacing: 0.612px; padding: 15px 30px; ">DISCOVER
+                                    MORE</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="real-world">
+        <div class="container text-center">
+            <h1 class="text-light fw-bold">REAL-WORLD EXPERIENCE</h1>
+            <span class="" style="color:#726F84; font-size: 18px;">The best business consulting firm you can count
+                on!</span>
+
+        </div>
+        <div class="container carousel-container">
+
+            <div class="owl-carousel carousel1 owl-theme ">
+                <div class="item d-flex justify-content-center">
+                    <div class="card " style="width: 22rem;">
+
+
+                        <div class="card-body">
+                            <h4 class="w-75 text-light">WEALTH MANAGEMENT</h4>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-one ps-0" style="font-size: 12px; color: #8F8DA0;"> <span>READ
+                                        MORE</span></button>
+
+                                <img src="./img/Path1.png" class="img-fluid" style="height: 100px; width: 40%;">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item d-flex justify-content-center">
+                    <div class="card " style="width: 22rem;">
+
+
+                        <div class="card-body">
+                            <h4 class="w-75 text-light">WEALTH MANAGEMENT</h4>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-one ps-0" style="font-size: 12px; color: #8F8DA0;"> <span>READ
+                                        MORE</span></button>
+
+                                <img src="./img/Path1.png" class="img-fluid" style="height: 100px; width: 40%;">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item d-flex justify-content-center">
+                    <div class="card " style="width: 22rem;">
+
+
+                        <div class="card-body">
+                            <h4 class="w-75 text-light">WEALTH MANAGEMENT</h4>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-one ps-0" style="font-size: 12px; color: #8F8DA0;"> <span>READ
+                                        MORE</span></button>
+
+                                <img src="./img/Path1.png" class="img-fluid" style="height: 100px; width: 40%;">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item d-flex justify-content-center">
+                    <div class="card " style="width: 22rem;">
+
+
+                        <div class="card-body">
+                            <h4 class="w-75 text-light">WEALTH MANAGEMENT</h4>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-one ps-0" style="font-size: 12px; color: #8F8DA0;"> <span>READ
+                                        MORE</span></button>
+
+                                <img src="./img/Path1.png" class="img-fluid" style="height: 100px; width: 40%;">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item d-flex justify-content-center">
+                    <div class="card " style="width: 21rem;">
+
+
+                        <div class="card-body">
+                            <h4 class="w-75 text-light">WEALTH MANAGEMENT</h4>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-one ps-0" style="font-size: 12px; color: #8F8DA0;"> <span>READ
+                                        MORE</span></button>
+
+                                <img src="./img/Path1.png" class="img-fluid" style="height: 100px; width: 40%;">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="container partner-cont">
+            <span>MEET THE PARTNERS</span>
+        </div>
+        <br><br><br><br><br>
+
+
+
+
+
+    </div>
+
+    <div class="leading-cont">
+        <img src="./img/leading-back.png" class="lead-background">
+        <div class="container" style="margin-bottom: 168px;margin-top: 168px;">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-none d-md-block">
+                    <div class="player-cont">
+                        <div class="play-btn">
+                            <img src="./img/play.png" alt="playbutton" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <h1 style="font-size: 50px; margin-bottom: 50px;letter-spacing: -1.016px;"
+                        class="fw-bold text-uppercase">We’re leading in the market</h1>
+                    <p style="font-size: 18px; color: #726F84;">Lorem ipsum is simply free text dolor sit amet,
+                        consectetur notted
+                        adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lonm andhn.
+                    </p>
+                    <p class="text-primary" style="margin-bottom: 66px;">We have 35+ years of experience. We offer
+                        marketing and consulting services</p>
+                    <div class="progress">
+
+                        <div class="progress-bar" role="progressbar" style="width: 89%;" aria-valuenow="88"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-value">88%</div>
+                            <span class="progress-title">CONSULTING</span>
+                        </div>
+
+                    </div>
+
+                    <div class="progress  " style="margin-top: 2.5rem;">
+
+                        <div class="progress-bar" role="progressbar" style="width: 68%;" aria-valuenow="88"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-value">68%</div>
+                            <span class="progress-title">ADVICES</span>
+                        </div>
+
+                    </div>
+                    <br><br>
+
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                            <div class="tele-cont">
+
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                            <p style="color: #726F84;" class="mb-0">Have any question? Give us a call</p>
+                            <p style="font-size: 18px;" class="mb-0 fw-bold">+92 315 733 2944</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+        <img src="./img/leading-back.png" class="lead-background2">
+
+
+
+
+    </div>
+
+    <div class="case-study-cont">
+        <div class="container ">
+            <div class="row g-0 leading-cards">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 p-0">
+                                    <div class="count01">
+                                        <img src="./img/01.png" class="">
+                                    </div>
+
+                                    <!-- <div class="tele-cont">
+
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div> -->
+
+
+
+                                </div>
+                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                                    <p class="fw-bold">GET PROFESSIONAL ADVICE</p>
+                                    <p style="color: #726F84;" class="mb-0">There are many variations of available but
+                                        the majority have suffered alteration.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 p-0">
+                                    <div class="count01">
+                                        <img src="./img/02.png" class="">
+                                    </div>
+
+                                    <!-- <div class="tele-cont">
+
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div> -->
+
+
+
+                                </div>
+                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                                    <p class="fw-bold">GET PROFESSIONAL ADVICE</p>
+                                    <p style="color: #726F84;" class="mb-0">There are many variations of available but
+                                        the majority have suffered alteration.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h1 class="text-center fw-bold case-study-heading mt-sm-5" style="font-size: 50px;">NEW CASE STUDIES</h1>
+            <P class="text-center fw-bold" style="font-size:18px; color: #8F8DA0;">We help our clients renew their
+                business</P>
+
+            <div class="owl-carousel carousel1" style="margin-top: 56px;">
+                <div class="item">
+                    <div class="card " style="height: 570px;">
+                        <div class="card-head">
+
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-end p-0" style="margin-right: 50px;">
+                            <div style="    margin-bottom: 68px;     width: 300px; padding-left: 74px;">
+                                <i class="fa-solid fa-car "
+                                    style="font-size: 60px; color: white; margin-bottom: 28px;"></i><br>
+                                <span class="text-uppercase text-light" style="font-size: 14px;">Thought
+                                    leadership</span>
+                                <h3 class="text-uppercase text-light fw-bold" style="font-size: 30px;">businesses growth
+                                </h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mission">
+        <div class="container mission-cont">
+            <h1 class=" text-white fw-bold mx-lg-auto text-center mb-5" style="font-size: 60px; width: 55% ;  ">MISSION
+                IS TO PROTECT YOUR BUSINESSES & MUCH MORE</h1>
+            <button class="btn btn-primary btn-lg mx-auto d-block fw-bold " style="padding: 23px 40px;">DISCOVER
+                MORE</button>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="container question-cont">
+            <h1 class="text-center fw-bold" style="margin-bottom: 23px" style="font-size: 50px">QUESTION ANSWER</h1>
+            <span class=" d-block text-center fw-bold" style="margin-bottom: 72px;font-size: 18px;">We help our clients
+                renew their business</span>
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-sm-3 order-md-3 order-lg-1 mt-sm-5 mt-lg-0">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <img src="./img/1..png">
+                                   <span class="ms-3 " style="color: black !important">THINK AHEAD AND BOOST YOUR BUSINESS?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>There are many variations of passages the majority have suffered alteration in
+                                        some fo injected humour, or randomised words believable.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <img src="./img/2..png">
+                                  
+                                    <span class="ms-3 " style="color: black !important">HOW CONSULTANCY EXPERTS WORK?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>There are many variations of passages the majority have suffered alteration in
+                                        some fo injected humour, or randomised words believable.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <img src="./img/3..png">
+                                  
+                                    <span class="ms-3 " style="color: black !important">WHAT IS THE BEST ADVICE FOR GROWTH?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>There are many variations of passages the majority have suffered alteration in
+                                        some fo injected humour, or randomised words believable.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    <img src="./img/4..png">
+                                   
+                                    <span class="ms-3" style="color: black !important">HOW TO IMPROVE YOUR BUSINESS?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span>There are many variations of passages the majority have suffered alteration in
+                                        some fo injected humour, or randomised words believable.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mt-auto order-sm-1 order-lg-2 mt-lg-5 mt-xl-auto">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 checkpoint">
+                            <div class="mb-2">
+                                <img src="./img/check.png">
+                                <p class=" d-inline" style="font-size: 18px">Nsectetur cing elit.</p>
+                            </div>
+                            <div class="mb-2">
+                                <img src="./img/check.png">
+                                <p class=" d-inline" style="font-size: 18px">Suspe ndisse suscipit sagittis leo.
+                                </p>
+                            </div>
+                            <div class="mb-2">
+                                <img src="./img/check.png">
+                                <p class=" d-inline" style="font-size: 18px">Entum estibulum dignissim posuere.</p>
+                            </div>
+                            <div class="mb-2">
+                                <img src="./img/check.png">
+                                <p class=" d-inline" style="font-size: 18px">If you are going to use a passage</p>
+                            </div>
+
+                            <div class="">
+                                <img src="./img/check.png" class="">
+                                <p class=" d-inline " style="font-size: 18px">If you are going to use a passage test </p>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 order-sm-2 order-lg-3 d-none d-md-block">
+                            <div class="rec">
+                                <div class="inside-rec ms-auto">
+                                    <div class="inside-content">
+                                        <img src="./img/30.png">
+                                        <p class="text-center mx-auto w-50 text-light fw-bold mt-2"
+                                            style="font-size: 18px;">
+                                            Years of Experience
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="container about-cont">
+            <div class="row g-4">
+                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                    <h1 class="display-3 fw-bold">
+                        WHAT THEY ARE TALKING ABOUT?
+                    </h1>
+                    <span style="font-size: 18px;">Trusted by more than 4,200 customers</span>
+
+
+                </div>
+                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
+                    <div class=" about-carousel owl-carousel owl-theme ">
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body" style="padding: 3rem;">
+                                    <p style="font-size: 18px;">Lorem ipsum is simply free text dolor sit amet,
+                                        consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.Lorem ipsum is simply free text dolor sit
+                                        amet,consectetur notted adipisicing elit sed do eiusmod tempor
+                                    </p>
+                                    <div class="card-footer p-0 bg-transparent border-0">
+                                        <h6 class="text-primary text-uppercase fw-bold">Todd Higgins</h6>
+                                        <span class="text-uppercase " style="font-size: 12px;">Customer</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body" style="padding: 3rem;">
+                                    <p style="font-size: 18px;">Lorem ipsum is simply free text dolor sit amet,
+                                        consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.Lorem ipsum is simply free text dolor sit
+                                        amet,consectetur notted adipisicing elit sed do eiusmod tempor
+                                    </p>
+                                    <div class="card-footer p-0 bg-transparent border-0">
+                                        <h6 class="text-primary text-uppercase fw-bold">Todd Higgins</h6>
+                                        <span class="text-uppercase " style="font-size: 12px;">Customer</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body" style="padding: 3rem;">
+                                    <p style="font-size: 18px;">Lorem ipsum is simply free text dolor sit amet,
+                                        consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.Lorem ipsum is simply free text dolor sit
+                                        amet,consectetur notted adipisicing elit sed do eiusmod tempor
+                                    </p>
+                                    <div class="card-footer p-0 bg-transparent border-0">
+                                        <h6 class="text-primary text-uppercase fw-bold">Todd Higgins</h6>
+                                        <span class="text-uppercase " style="font-size: 12px;">Customer</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body" style="padding: 3rem;">
+                                    <p style="font-size: 18px;">Lorem ipsum is simply free text dolor sit amet,
+                                        consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.Lorem ipsum is simply free text dolor sit
+                                        amet,consectetur notted adipisicing elit sed do eiusmod tempor
+                                    </p>
+                                    <div class="card-footer p-0 bg-transparent border-0">
+                                        <h6 class="text-primary text-uppercase fw-bold">Todd Higgins</h6>
+                                        <span class="text-uppercase " style="font-size: 12px;">Customer</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="counters">
+        <div class="container counter-cont">
+            <div class="row g-4 ">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-center border-end">
+                    <i class="fa-solid fa-users"></i>
+                    <h1 class="counter text-light text-center fw-bold">450</h1>
+                    <span>CONSULTING SOLUTIONS</span>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-center border-end">
+                    <i class="fa-solid fa-users"></i>
+                    <h1 class="counter text-light text-center fw-bold">450</h1>
+                    <span>CONSULTING SOLUTIONS</span>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-center border-end">
+                    <i class="fa-solid fa-users"></i>
+                    <h1 class="counter text-light text-center fw-bold">450</h1>
+                    <span>CONSULTING SOLUTIONS</span>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-center ">
+                    <i class="fa-solid fa-users"></i>
+                    <h1 class="counter text-light text-center fw-bold">450</h1>
+                    <span>CONSULTING SOLUTIONS</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="before-footer">
+        <div class="container before-footer-cont">
+            <div class="row g-0 overlap-cards">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="card shadow">
+                        <div class="card-body" style="padding: 3rem;">
+                            <p class="fw-bold text-center">Business Growth</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="card shadow">
+                        <div class="card-body" style="padding: 3rem;">
+                            <p class="fw-bold text-center">Business Growth</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="card shadow">
+                        <div class="card-body" style="padding: 3rem;">
+                            <p class="fw-bold text-center">Business Growth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="row ">
+                        <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-3">
+
+
+                            <img src="./img/Capture.PNG" class="img-fluid">
+
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                            <p class="mb-4 fw-bold">HIGHEST SUCCESS RATES</p>
+                            <span style="font-size: 18px;" class="mb-0">Lorem Ipsum nibh vel velit auctor aliqu. Aenean
+                                sollic tudin, lorem is simply free text quis bibendum.</span>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row ">
+                        <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-3">
+
+
+                            <img src="./img/Capture.PNG" class="img-fluid">
+
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                            <p class="mb-4 fw-bold">HIGHEST SUCCESS RATES</p>
+                            <span style="font-size: 18px;" class="mb-0">Lorem Ipsum nibh vel velit auctor aliqu. Aenean
+                                sollic tudin, lorem is simply free text quis bibendum.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 border-start">
+                    <span>
+                        There are many variations of passages of lorem ipsum available, but the majority have suffered
+                        alteration in some form injected humour or randomised words which don't look believable.
+                    </span><br><br><br><br><br><br>
+                    <img src="./img/minus-solid.svg" style="width: 20px;
+                    height: 20px;">
+                    <span>&nbsp&nbspIf you are going to use a passage</span><br>
+                    <img src="./img/minus-solid.svg" style="width: 20px;
+                    height: 20px;">
+                    <span>&nbsp&nbspLorem Ipsum you need to be sure</span><br>
+                    <img src="./img/minus-solid.svg" style="width: 20px;
+                    height: 20px;">
+                    <span>&nbsp&nbspThere isn't anything embarrassing</span><br>
+                    <img src="./img/minus-solid.svg" style="width: 20px;
+                    height: 20px;">
+                    <span>&nbsp&nbspHidden in the middle of text</span><br>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container footer-cont">
+            <div class="row g-4 ">
+                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12">
+                    <p class="text-light fw-bold">
+                        CreativeLogo
+                    </p>
+
+                    <span class="d-block" style=" margin-bottom: 49px; margin-top:44px">Welcome to our consultancy
+                        agency. Lore ipsum simply text amet cing elit simply text amet cing elit.</span>
+                    <div class="d-flex mb-3 ">
+                        <i class="fa-solid fa-phone me-3" style="background: #2D95FD;
+                    padding: 3px;"></i><span>+92 315 733 2944</span>
+                    </div>
+                    <div class="d-flex mb-3"><img src="./img/envelope-solid.svg" style="height: 20px;"
+                            class="me-3"><span>hasif02@brickclay.com</span></div>
+                    <div class="d-flex"><img src="./img/iconizer-location-dot-solid.svg" style="height: 20px;"
+                            class="me-3"><span>66 Broklyn Street New York, USA</span></div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-6 explore-col" style="padding-left: 60px;">
+                    <p class="text-light fw-bold" style="margin-bottom: 45px;">
+                        Explore
+                    </p>
+
+                    <ul>
+                        <li class=""><a class="fw-bold">About</a></li>
+                        <li><a href="#" class="fw-bold">Meet Our Team</a></li>
+                        <li><a href="#" class="fw-bold">Case Studies</a></li>
+                        <li><a href="#" class="fw-bold">Latest News</a></li>
+                        <li><a href="#" class="fw-bold">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-6" >
+                    <p class="text-light fw-bold" style="margin-bottom: 45px;">
+                        More
+                    </p>
+                    <ul>
+                        <li class=""><a href="#" class="fw-bold">Support</a></li>
+                        <li><a href="#" class="fw-bold">Terms of use</a></li>
+                        <li><a  href="#" class="fw-bold">Privacy & Policy</a></li>
+                        <li><a href="#" class="fw-bold">Help</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 " >
+                    <p class="text-light fw-bold" style="margin-bottom: 45px;">
+                        NEWSLETTER
+                    </p>
+                    <div class="newsletter-cont ">
+                        <label class="fw-bold" style="color: #8F8DA0;    margin-bottom: 12px;">Subscribe for latest articles and resources</label>
+                        <div class="input-group">
+                            <form id="emailForm">
+                            <input type="email" class="form-control" placeholder="Email Address" aria-label="email" aria-describedby="button-addon2" style="    padding: 12px;">
+                            <button class="btn btn-primary" type="submit" id="button-addon2">Register</button>
+                            </form>
+                          </div>
+                    </div>
+
+                    <!-- <div class="wrap">
+                        <label style="color: #8F8DA0;    margin-bottom: 12px;">Subscribe for latest articles and resources</label>
+                       
+                        <input class="input" type="text">
+                        <button class="button btn btn-primary" type="submit">Register</button>
+                      </div> -->
+
+                </div>
+            </div>
+
+            <div class="footer-padding-bottom"></div>
+
+            
+            <div class="footer-tagline">
+
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <span class="fw-bold">© Copyright 2022 by Brickclay</span>
+                    <div>
+                       <a href="#" class="me-3"> <i class="fa-brands fa-instagram "></i></a>
+                       <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a> 
+                         <a href="#" class="me-3"><i class="fa-brands fa-twitter "></i></a> 
+                         <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+    <script src="./js/index.js"></script>
+
+
+
+</body>
+
+</html>
